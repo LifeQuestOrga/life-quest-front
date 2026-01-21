@@ -1,3 +1,15 @@
-<header class="grid grid-cols-12 gap-4 border-b h-16 border-b-slate-200">
-  <div class="col-span-6 col-start-4 ">header</div>
+<header class="grid md:grid-cols-12  grid-cols-12 gap-4 border-b h-16 border-b-slate-200">
+  <div class="md:col-span-6 md:col-start-4  col-span-10 col-start-2 flex justify-between items-center">
+    <div class="flex flex-row gap-1">
+      <div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
+        <lucide-angular [size]="12" [img]="Sparkles" class="w-5 h-5 text-neutral-50"></lucide-angular>
+      </div>
+
+      <div class="font-bold text-2xl text-foreground">lifeQuest</div>
+    </div>
+    <div class="flex flex-row gap-0.5">
+      <app-badge [icon]="Zap" [type]="'info'" label="10 XP"/>
+      <app-badge [icon]="Crown" [type]="'warning'" label="10 XP"/>
+    </div>
+  </div>
 </header>
