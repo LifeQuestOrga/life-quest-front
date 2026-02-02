@@ -1,6 +1,15 @@
 <footer class="left-0 right-0 fixed bottom-0  border-t border-t-slate-200">
-  <div class="grid grid-cols-12 gap-4 h-16">
-    <div class="col-span-6 col-start-4 ">footer</div>
+  <div class="grid grid-cols-4 gap-4 h-16">
+    <div class="col-span-2 col-start-2 flex justify-between">
+      <button routerLink="/dashboard" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="flex flex-col items-center gap-1 px-4 py-2 rounded-lg transition-colors">
+        <lucide-angular [size]="12" [img]="Home" class="w-5 h-5 "></lucide-angular>
+        <span>Accueil</span>
+      </button>
+      <button routerLink="/goals" routerLinkActive="active"  class="flex flex-col items-center gap-1 px-4 py-2 rounded-lg transition-colors">
+        <lucide-angular [size]="12" [img]="Target" class="w-5 h-5"></lucide-angular>
+        <span>Objectifs</span>
+      </button>
+    </div>
   </div>
 </footer>
 
