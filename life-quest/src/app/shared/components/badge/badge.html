@@ -1,0 +1,6 @@
+<div class="inline-flex items-center gap-1 rounded-full text-xs px-2 py-0.5" [ngClass]="bgColor()">
+  @if (icon()){
+    <lucide-angular [size]="12" [img]="icon()" class="text-xs"></lucide-angular>
+  }
+  <span>{{label()}}</span>
+</div>
