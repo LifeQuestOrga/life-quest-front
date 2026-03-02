@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { BaseChartDirective } from 'ng2-charts';
 import { Crown, LucideAngularModule } from 'lucide-angular';
 
@@ -12,9 +12,9 @@ import { Crown, LucideAngularModule } from 'lucide-angular';
   styleUrl: './player-lavel-progress.css',
 })
 export class PlayerLavelProgress {
-  readonly actualLevel = 12;
-  readonly nextLevelExperiencePoints = 1500;
-  readonly nextLevel = 2;
+  readonly actualLevel = signal(1);
+  readonly nextLevelExperiencePoints = signal(1500);
+  readonly nextLevel = signal(2);
 
   data = {
     datasets: [{
