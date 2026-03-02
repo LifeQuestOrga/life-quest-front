@@ -1,0 +1,17 @@
+<div class="relative">
+  <canvas
+    baseChart
+    [data]="data"
+    [options]="options"
+    [type]="'doughnut'"
+    [width]="150"
+    [height]="150">
+  </canvas>
+
+  <div class="absolute inset-0 flex flex-col items-center justify-center">
+    <lucide-angular [size]="12" [img]="Crown" class="w-5 h-5" color="rgb(54, 162, 235)"></lucide-angular>
+    <span class="text-xl font-bold">1</span>
+  </div>
+</div>
+
+<div class="legend font-light text-slate-500 mt-2 text-xs">90 XP pour niveau 2</div>

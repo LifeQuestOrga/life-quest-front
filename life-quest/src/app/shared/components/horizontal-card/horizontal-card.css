@@ -1,0 +1,11 @@
+:host{
+  display: flex;
+  flex:1;
+  flex-direction: row;
+  border-radius: 10px;
+  border: 1px solid #E0EAF9;
+  height: 100px;
+  .test{
+    width: 100%;
+  }
+}
