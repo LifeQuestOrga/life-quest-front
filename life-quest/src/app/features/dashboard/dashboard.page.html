@@ -1,1 +1,29 @@
-<p>dashboard.page works!</p>
+<app-player-lavel-progress/>
+<div class="objective-cards">
+  <app-horizontal-card  iconBackgroundColor="#F6F9FC" iconColor="#68C773" [icon]="Zap" class="bg-[#E4F2EA]">
+    <div card-content class="flex flex-col">
+     <div class="font-light text-xs text-gray-400">XP TOTAL</div>
+     <div class="font-bold">{{totalXp()}}</div>
+    </div>
+  </app-horizontal-card>
+  <app-horizontal-card iconBackgroundColor="#DBE7F9" iconColor="#5991EA" [icon]="Shell" class="bg-[#E0EAF9]">
+    <div card-content class="flex flex-col">
+      <div class="font-light text-xs text-gray-400">OBJECTIFS</div>
+      <div class="font-bold">{{totalGoals()}}</div>
+      <div class="font-light text-xs text-gray-400">{{completedGoals()}} terminé</div>
+    </div>
+  </app-horizontal-card>
+</div>
+<div>
+  <app-horizontal-card iconBackgroundColor="#F6F9FC" iconColor="#5D646F" [icon]="TrendingUp">
+    <div card-content class="flex flex-col">
+      <div class="font-light text-xs text-gray-400">Progression globale</div>
+      <div class="font-bold">{{overallProgressPercentage()}}%</div>
+      <div class="font-light text-xs text-gray-400">{{activeGoals()}} objectifs en cours</div>
+    </div>
+  </app-horizontal-card>
+</div>
+<!-- creat objectife card -->
+
+
+
