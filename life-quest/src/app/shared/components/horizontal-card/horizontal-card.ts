@@ -1,5 +1,5 @@
-import { Component, input } from '@angular/core';
-import { LucideAngularModule, LucideIconData } from 'lucide-angular';;
+import { Component, computed, input } from '@angular/core';
+import { LucideAngularModule, LucideIconData } from 'lucide-angular';
 
 @Component({
   selector: 'app-horizontal-card',
@@ -13,4 +13,6 @@ export class HorizontalCard {
   readonly icon = input.required<LucideIconData>();
   readonly iconColor = input<string>()
   readonly iconBackgroundColor = input<string>()
+
+  readonly iconBackgroundColorClass= computed(()=> `bg-[${this.iconBackgroundColor()}]`);
 }

@@ -1,5 +1,5 @@
 <div class="flex flex-row justify-center items-center">
-  <div class="rounded-lg bg-[#F6F9FC] ml-3 mr-2 w-8 h-8 flex justify-center items-center">
+  <div class="rounded-lg ml-3 mr-2 w-8 h-8 flex justify-center items-center" [class]="iconBackgroundColorClass()">
     <lucide-angular [size]="20" [img]="icon()" [color]="iconColor()"></lucide-angular>
   </div>
   <ng-content select="[card-content]"></ng-content>

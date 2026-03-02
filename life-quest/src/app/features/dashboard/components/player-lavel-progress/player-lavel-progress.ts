@@ -12,6 +12,10 @@ import { Crown, LucideAngularModule } from 'lucide-angular';
   styleUrl: './player-lavel-progress.css',
 })
 export class PlayerLavelProgress {
+  readonly actualLevel = 12;
+  readonly nextLevelExperiencePoints = 1500;
+  readonly nextLevel = 2;
+
   data = {
     datasets: [{
       label: 'My First Dataset',
